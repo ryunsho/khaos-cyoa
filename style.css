@@ -1,11 +1,43 @@
-* {
-    text-align: center;
-    padding-left: 3%;
-    padding-right: 3%;
-    box-sizing: border-box;
+@font-face {
+    font-family: 'MonaspaceArgon';
+    src:url('fonts/MonaspaceArgon-Regular.woff') format('woff'),
+        url('fonts/MonaspaceArgon-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MonaspaceArgon';
+    src:url('fonts/MonaspaceArgon-Bold.woff') format('woff'),
+        url('fonts/MonaspaceArgon-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MonaspaceArgon';
+    src:url('fonts/MonaspaceArgon-Italic.woff') format('woff'),
+        url('fonts/MonaspaceArgon-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'MonaspaceArgon';
+    src:url('fonts/MonaspaceArgon-BoldItalic.woff') format('woff'),
+        url('fonts/MonaspaceArgon-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Jersey15';
+    src:url('fonts/Jersey15.ttf') format('opentype');
 }
 
 @media (max-width: 800px) {
+    * {
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+        box-sizing: border-box;
+    }
     .choice1 {
         position: relative;
         float: center;
@@ -23,46 +55,83 @@
         padding-left: 0%;
         padding-right: 0%;
     }
+    h1 {
+        font-family: "Jersey15";
+        font-size: 2.5rem;
+        padding-bottom: 0%;
+        padding-top: 15%;
+        margin-bottom: 0%;
+    }
+    h2 {
+        font-family: "Jersey15";
+        padding: 0%;
+        font-size: 1.25rem;
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+    h3 {
+        font-family: "MonaspaceArgon";
+        font-size: 1rem;
+        text-align: left;
+    }
+    p {
+        font-family: "MonaspaceArgon";
+        font-weight: normal;
+        font-size: 0.7rem;
+        text-align: left;
+    }
 }
 
 @media (min-width: 801px) {
+    * {
+        text-align: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        box-sizing: border-box;
+    }
     .container {
         padding-left: 10%;
         padding-right: 10%;
     }
+    h1 {
+        font-family: "Jersey15";
+        font-size: 3rem;
+        padding-bottom: 0%;
+        padding-top: 15%;
+        margin-bottom: 0%;
+    }
+    h2 {
+        font-family: "Jersey15";
+        padding: 0%;
+        font-size: 1.5rem;
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+    h3 {
+        font-family: "MonaspaceArgon";
+        font-weight: bold;
+        font-size: 1.25rem;
+        text-align: left;
+    }
+    p {
+        font-family: "MonaspaceArgon";
+        font-size: 0.8rem;
+        text-align: left;
+    }
 }
 
-h1 {
-    font-size: 3rem;
-    padding-bottom: 0%;
-    padding-top: 15%;
-    margin-bottom: 0%;
-}
-
-h2 {
-    padding: 0%;
-    font-size: 1.5rem;
-    margin-top: 0%;
-    margin-bottom: 5%;
-}
-
-h3 {
-    font-size: 1.25rem;
-    text-align: left;
-}
-
-p {
-    font-size: 1rem;
-    text-align: left;
-}
 i {
+    font-style: italic;
     padding: 0%;
 }
 b {
+    font-weight: bold;
     padding: 0%;
 }
 
 a.button, button {
+    font-family: "Jersey15";
+    font-size: 1rem;
     cursor: pointer;
     color: black;
     background-color: rgb(228, 228, 228);
@@ -86,6 +155,8 @@ button:hover, a.button:hover {
 }
 
 .choice1 {
+    font-family: "Jersey15";
+    font-weight: bold;
     position: relative;
     float: left;
     width: 50%;
@@ -93,11 +164,17 @@ button:hover, a.button:hover {
     padding-bottom: 10%;
 }
 .choice2 {
+    font-family: "Jersey15";
+    font-weight: bold;
     position: relative;
     float: right;
     width: 50%;
     padding: 3%;
     padding-bottom: 10%;
+}
+.choice1:hover, .choice2:hover {
+    font-style: italic;
+    cursor: pointer;
 }
 
 /* .chosen1, .chosen2 {
@@ -155,6 +232,7 @@ button:hover, a.button:hover {
 }
 
 .judge {
+    font-family: "Jersey15";
     cursor: pointer;
     color: black;
     background-color: rgb(228, 228, 228);
