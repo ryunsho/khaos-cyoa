@@ -1,3 +1,11 @@
+* {
+    background-color: black;
+}
+::selection{
+    background: rgb(0, 195, 0);
+    color: black;
+}
+
 @font-face {
     font-family: 'MonaspaceArgon';
     src:url('fonts/MonaspaceArgon-Regular.woff') format('woff'),
@@ -55,30 +63,46 @@
         padding-left: 0%;
         padding-right: 0%;
     }
+    img {
+        width: 100%;
+        height: auto;
+        padding: 2%;
+    }
     h1 {
         font-family: "Jersey15";
         font-size: 2.5rem;
-        padding-bottom: 0%;
-        padding-top: 15%;
+        padding: 0%;
         margin-bottom: 0%;
+        color: #00c300;
     }
     h2 {
         font-family: "Jersey15";
         padding: 0%;
         font-size: 1.25rem;
         margin-top: 0%;
-        margin-bottom: 5%;
+        margin-bottom: 0%;
+        color: rgb(0, 100, 0);
     }
     h3 {
         font-family: "MonaspaceArgon";
         font-size: 1rem;
         text-align: left;
+        color: rgb(0, 195, 0);
+    }
+    h4 {
+        font-family: "Jersey15";
+        padding: 0%;
+        font-size: 1rem;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        color: rgb(0, 100, 0);
     }
     p {
         font-family: "MonaspaceArgon";
         font-weight: normal;
         font-size: 0.7rem;
         text-align: left;
+        color: rgb(0, 195, 0);
     }
 }
 
@@ -93,30 +117,46 @@
         padding-left: 10%;
         padding-right: 10%;
     }
+    img {
+        width: 600px;
+        height: auto;
+        padding: 5%;
+    }
     h1 {
         font-family: "Jersey15";
         font-size: 3rem;
-        padding-bottom: 0%;
-        padding-top: 15%;
+        padding: 0%;
         margin-bottom: 0%;
+        color: rgb(0, 195, 0);
     }
     h2 {
         font-family: "Jersey15";
         padding: 0%;
         font-size: 1.5rem;
         margin-top: 0%;
-        margin-bottom: 5%;
+        margin-bottom: 0%;
+        color: rgb(0, 100, 0);
     }
     h3 {
         font-family: "MonaspaceArgon";
         font-weight: bold;
         font-size: 1.25rem;
         text-align: left;
+        color: rgb(0, 195, 0);
+    }
+    h4 {
+        font-family: "Jersey15";
+        padding: 0%;
+        font-size: 1.25rem;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        color: rgb(0, 100, 0);
     }
     p {
         font-family: "MonaspaceArgon";
         font-size: 0.8rem;
         text-align: left;
+        color: rgb(0, 195, 0);
     }
 
     .container {
@@ -139,9 +179,11 @@ a.button, button {
     font-size: 1.25rem;
     cursor: pointer;
     color: black;
-    background-color: rgb(228, 228, 228);
-    border: none;
+    background-color: rgb(0, 195, 0);
+    border: solid;
     border-radius: 5px;
+    border-color: rgb(0, 195, 0);
+    border-width: 3px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -150,13 +192,13 @@ a.button, button {
     height: 35px;
     transition: 0.4s ease;
     text-decoration: none;
+    margin: 5%;
 }
 
 button:hover, a.button:hover {
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(228, 228, 228);
-    border-width: 3px;
-    border: solid;
+    color: rgb(0, 195, 0);
+    background-color: black;
+    
 }
 
 .choice1 {
@@ -168,6 +210,7 @@ button:hover, a.button:hover {
     width: 50%;
     padding: 3%;
     padding-bottom: 10%;
+    color: rgb(0, 195, 0);
 }
 .choice2 {
     font-family: "Jersey15";
@@ -178,6 +221,7 @@ button:hover, a.button:hover {
     width: 50%;
     padding: 3%;
     padding-bottom: 10%;
+    color: rgb(0, 195, 0);
 }
 .choice1:hover, .choice2:hover {
     font-style: italic;
@@ -219,12 +263,18 @@ button:hover, a.button:hover {
 */
 
 
+.titlecontainer {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .container {
     position: relative;
-    margin: auto;
-    padding-top: 1%;
-    padding-bottom: 1%;
 }
 
 .slides {
@@ -232,19 +282,20 @@ button:hover, a.button:hover {
 }
 
 .box {
-    border: 2px solid black;
+    border: 2px solid rgb(0, 195, 0);
     padding: 5%;
-    margin: 2%;
-    background-color: lightgrey;
-    border-radius: 20px
+    background-color: black;
+    border-radius: 20px;
 }
 
 .judge {
     font-family: "Jersey15";
     cursor: pointer;
     color: black;
-    background-color: rgb(228, 228, 228);
-    border: none;
+    background-color: rgb(0, 195, 0);
+    border: solid;
+    border-color: rgb(0, 195, 0);
+    border-width: 3px;
     border-radius: 5px;
     display: inline-flex;
     justify-content: center;
@@ -256,7 +307,8 @@ button:hover, a.button:hover {
 }
 
 .judge:hover {
-    background-color: rgb(201, 201, 201);
+    background-color: black;
+    color: rgb(0, 195, 0);
 }
 
 .dot {
@@ -275,13 +327,17 @@ button:hover, a.button:hover {
 }
 
 .fade {
-    animation-name: fade;
+    animation-name: slide;
     animation-duration: 1.5s;
 }
 
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+@keyframes slide {
+    from {
+        opacity: .5;
+        transform: translateX(30px);}
+    to {
+        opacity: 1;
+        transform: translateX(0);}
 }
 
 /* to hide the text so that it opens when you finish judging */
@@ -292,4 +348,30 @@ button:hover, a.button:hover {
 #placeholder {
     display: none;
     height: 35px;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+}
+
+
+.slide-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.slide-text.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-text.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

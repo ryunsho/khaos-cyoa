@@ -10,84 +10,97 @@
 <body>
     <script src="script.js"></script>
 
-    <h1>Work Day</h1>
-    <h2>A Choose Your Own Adventure Story</h2>
-    <a href="about.html" class="button">About</a>
+    <div class="titlecontainer">
+        <h1>Work Day</h1>
+        <h2>A Choose Your Own Adventure Story</h2>
+        <a href="about.html" class="button">About</a>
+        <h4>Scroll to start</h4>
+        <h4>▼</h4>
+    </div>
 
+    <div class="slide-text">
+        <h3>Day 1</h3>
+        <p>You find yourself sitting in an office, shadowed by the light of an endless amount of souls. Each one of them
+            hovers and floats around you, their stories reduced and condensed into a single sheet of paper, all stacked
+            neatly on the side of your desk. On the papers are only a brief description, their virtues, their sins, and
+            the
+            decision: heaven or hell.</p>
+        <img src="images/office-desk.png" alt="office desk with papers">
+        <p>The fates of the souls are in your hands.</p><br>
 
-    <h3>Day 1</h3>
-    <p>You find yourself sitting in an office, shadowed by the light of an endless amount of souls. Each one of them
-        hovers and floats around you, their stories reduced and condensed into a single sheet of paper, all stacked
-        neatly on the side of your desk. On the papers are only a brief description, their virtues, their sins, and the
-        decision: heaven or hell.</p>
-    <p>The fates of the souls are in your hands.</p>
-
-    <div class="container">
-        <div class="slides fade">
-            <div class="box">
-                <h3>Aaron Coello</h3>
-                <p>Species: Human
-                    Gender: Male<br>
-                    Age: 9<br>
-                    Cause of death: Hit by a train</p>
-                <p>Lived in an orphanage where he was outcasted by the other children. His only friend was a rabbit
-                    plush, and he was always kind to people close to him. Held deep resentment for the kids who made fun
-                    of him and often wished misfortune upon them.</p><br>
-                <a class="judge" onclick="plusSlide(1)">Heaven</a>
-                <a class="judge" onclick="plusSlide(1)">Hell</a>
+        <div class="container">
+            <div class="slides fade">
+                <div class="box">
+                    <h3>Aaron Coello</h3>
+                    <p>Species: Human
+                        Gender: Male<br>
+                        Age: 9<br>
+                        Cause of death: Hit by a train</p>
+                    <p>Lived in an orphanage where he was outcasted by the other children. His only friend was a rabbit
+                        plush, and he was always kind to people close to him. Held deep resentment for the kids who made
+                        fun
+                        of him and often wished misfortune upon them.</p><br>
+                    <a class="judge" onclick="plusSlide(1)">Heaven</a>
+                    <a class="judge" onclick="plusSlide(1)">Hell</a>
+                </div>
             </div>
-        </div>
-        <div class="slides fade">
-            <div class="box">
-                <h3>Elio Rowling</h3>
-                <p>Species: Witch, vampire<br>
-                    Gender: Male<br>
-                    Age: 1528<br>
-                    Cause of death: Cursed artifact</p>
-                <p>Trafficked and experimented on many children under the guise of an orphanage. Wanted to achieve
-                    immortality through his experiments but ended up gaining it after being turned into a vampire.
-                    Discovered an artifact and used it without knowing about the curse it contained.</p><br>
-                <a class="judge" onclick="plusSlide(1)">Heaven</a>
-                <a class="judge" onclick="plusSlide(1)">Hell</a>
+            <div class="slides fade">
+                <div class="box">
+                    <h3>Elio Rowling</h3>
+                    <p>Species: Witch, vampire<br>
+                        Gender: Male<br>
+                        Age: 1528<br>
+                        Cause of death: Cursed artifact</p>
+                    <p>Trafficked and experimented on many children under the guise of an orphanage. Wanted to achieve
+                        immortality through his experiments but ended up gaining it after being turned into a vampire.
+                        Discovered an artifact and used it without knowing about the curse it contained.</p><br>
+                    <a class="judge" onclick="plusSlide(1)">Heaven</a>
+                    <a class="judge" onclick="plusSlide(1)">Hell</a>
+                </div>
             </div>
-        </div>
-        <div class="slides fade">
-            <div class="box">
-                <h3>Calvin Sova</h3>
-                <p>Species: Avian, Owl<br>
-                    Gender: Male<br>
-                    Age: 25<br>
-                    Cause of death: Killed in a war</p>
-                <p>Grew up in a family of nobility and became a knight for his kingdom. Went through many misfortunes in
-                    his lifetime because of his “bad luck”. Tried to protect his people until the end, and though he was
-                    a knight, has never killed a soul.</p><br>
-                <a class="judge" onclick="plusSlide(1)">Heaven</a>
-                <a class="judge" onclick="plusSlide(1)">Hell</a>
-                <div id="placeholder"></div>
+            <div class="slides fade">
+                <div class="box">
+                    <h3>Calvin Sova</h3>
+                    <p>Species: Avian, Owl<br>
+                        Gender: Male<br>
+                        Age: 25<br>
+                        Cause of death: Killed in a war</p>
+                    <p>Grew up in a family of nobility and became a knight for his kingdom. Went through many
+                        misfortunes in
+                        his lifetime because of his “bad luck”. Tried to protect his people until the end, and though he
+                        was
+                        a knight, has never killed a soul.</p><br>
+                    <a class="judge" onclick="plusSlide(1)">Heaven</a>
+                    <a class="judge" onclick="plusSlide(1)">Hell</a>
+                    <div id="placeholder"></div>
+                </div>
             </div>
         </div>
     </div>
 
-    <span id="day1text">
+    <div id="day1text" class="fade-text">
         <p>Heaven. Hell. Hell. Heaven. The choices continue.</p>
-        <p>It keeps going on and on. An endless cycle. The names start to blur into one another and everything starts to
+        <p>It keeps going on and on. An endless cycle. The names start to blur into one another and everything
+            starts to
             look monotonous. Black and white. But you have to continue.</p>
         <p>It's your job. Your duty. Your purpose.</p>
-        <p>Your name is Azariel Dalvir, a reaper who decides the fates of souls with an impartial judgement. The gods
+        <p>Your name is Azariel Dalvir, a reaper who decides the fates of souls with an impartial judgement. The
+            gods
             have placed their faith in you, and you need to carry out their will.</p>
-        <p>But as the hours stretch longer, a thought crosses your mind. A question that had always been in the corner
+        <p>But as the hours stretch longer, a thought crosses your mind. A question that had always been in the
+            corner
             of your mind, one that you could never dare to voice.</p>
         <p><i>Is this all there is?</i></p>
 
-        <div class="choice1"><a class="day1choice1" onclick="day1choice1function()" id="day1choice1btn">Choice 1: Bare
+        <div class="choice1"><a class="day1choice1" onclick="day1choice1function()" id="day1choice1btn">Choice 1:
+                Bare
                 with the boredom and continue working.</a></div>
-        <div class="choice2"><a class="day1choice2" onclick="day1choice2function()" id="day1choice2btn">Choice 2: Take a
+        <div class="choice2"><a class="day1choice2" onclick="day1choice2function()" id="day1choice2btn">Choice 2:
+                Take a
                 break and reflect for a moment.</a></div>
-        <!-- <div id="chosen1"><p><b>Bare with the boredom and continue working.</b></p>
-        <div id="chosen2"><p><b>Take a break and reflect for a moment.</b></p> -->
-    </span>
+    </div>
 
-    <span id="day1choice1text">
+    <div id="day1choice1text" class="fade-text">
         <p><b>Bare with the boredom and continue working.</b></p>
         <p>You scratch that thought out of your head. It’s not the time to be doubting yourself.</p>
         <p>There’s still work to do. Souls to judge.</p>
@@ -101,10 +114,33 @@
             stories—they must have been so fulfilling. Nothing like your own.</p>
         <p>You suppress the thoughts for now. Tomorrow’s a new day, and you’ll need to continue your duty.</p>
         <p>However, as you slowly drift to sleep, you dream of colours you’ve never seen before, sounds you’ve never
-            heard, visions of people, and lives you could never live. As you continue to fall asleep, you wonder if you’ll ever be able to
+            heard, visions of people, and lives you could never live. As you continue to fall asleep, you wonder if
+            you’ll ever be able to
             experience that someday…</p>
-    </span>
+    </div>
+    <div id="day1choice2text" class="fade-text">
+        <p><b>You decide to take a break from working for a bit.</b></p>
+        <p>You stare at the soul profiles on ur desk. The descriptions of these people. They’re so short, lacking
+            detail
+            about their lives. You know that there are more to these stories. There must be.</p>
+        <p>Your mind starts drifting off. You think about the mortal realm, where these souls all come from. You can
+            only imagine what it’s like—chaotic, unpredictable, alive. As an entity of the afterlife, a servant of
+            the
+            gods, you’ve never been allowed to leave this realm. But as these souls flow in, you keep wondering…
+            what is
+            it like?</p>
+        <p>What is it like to do whatever you wished?</p>
+        <p>What is it like to be unbound to these duties that keep you chained down at this desk?</p>
+        <p>What is it like to be…free?</p>
+        <p>It’s a dangerous thought to be having. Reapers aren’t allowed to stray from their station, and yet, as
+            you
+            continue dazing into space, you keep wondering.</p>
+        <p>What if you could?</p>
+    </div>
 
+    <div class="block">
+
+    </div>
 </body>
 
 </html>
