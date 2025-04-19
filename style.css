@@ -159,7 +159,7 @@
     .choice1 {
         padding-left: 10%;
     }
-    
+
     .choice2 {
         padding-right: 10%;
     }
@@ -298,18 +298,6 @@ a.button:hover {
     float: right;
     width: 48%;
     padding-top: 3%;
-    padding-bottom: 10%;
-    color: rgb(0, 195, 0);
-}
-
-.endofdemo {
-    font-family: "Jersey15";
-    font-size: 1.25rem;
-    text-align: center;
-    position: relative;
-    float: center;
-    width: 100%;
-    padding: 3%;
     padding-bottom: 10%;
     color: rgb(0, 195, 0);
 }
@@ -594,6 +582,24 @@ a.button:hover {
 }
 
 /* style for the end page */
+.end-button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.endofdemo {
+    font-family: "Jersey15";
+    font-size: 1.25rem;
+    text-align: center;
+    position: relative;
+    float: center;
+    width: 100%;
+    padding: 3%;
+    padding-bottom: 10%;
+    color: rgb(0, 195, 0);
+}
+
 .end-container {
     padding: 5%;
     max-width: 1000px;
