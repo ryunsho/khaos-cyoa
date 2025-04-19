@@ -135,7 +135,7 @@
     }
 
     .story-container {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
         padding: 3% 5%;
         text-align: left;
@@ -524,13 +524,11 @@ a.button:hover {
 /* container for the about page, serves same purpose as title container */
 .about-container {
     padding: 5%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: left;
-
+    align-items: left;
     animation: fadeIn 0.5s ease-out 1s forwards;
     opacity: 0;
 }
@@ -539,26 +537,28 @@ a.button:hover {
 .about-container h2 {
     font-family: "Jersey15";
     color: rgb(0, 195, 0);
+    margin-top: 40px;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .about-container p,
-.about-container ul {
+.about-container ul,
+.about-container li {
     font-family: "MonaspaceArgon";
     color: rgb(0, 195, 0);
     font-size: 0.85rem;
-    line-height: 1.7;
-    text-align: center;
-}
-
-.about-container ul {
-    list-style-type: none;
-    padding-left: 0;
+    line-height: 1.5;
+    margin: 0.3rem 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
 }
 
 .about-container ul li::before {
     content: "→ ";
     color: rgb(0, 195, 0);
+    text-align: left;
 }
 
 /* style for links */
@@ -568,6 +568,13 @@ a.button:hover {
     text-decoration: none;
     border-bottom: 1px dotted rgb(0, 195, 0);
     transition: all 0.3s ease;
+    width: auto;
+    max-width: max-content;
+    align-items: center;
+    display: inline;
+    width: fit-content;
+    margin: 2rem auto 0 auto;
+    text-align: center;
 }
 
 .about-container a:hover:not(.button) {
@@ -581,7 +588,7 @@ a.button:hover {
 /* style for the end page */
 .end-container {
     padding: 5%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     flex-direction: column;
